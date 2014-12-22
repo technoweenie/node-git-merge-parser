@@ -1,0 +1,11 @@
+{
+  "name": "git-merge-parser",
+  "version": "0.0.1",
+  "description": "git merge-tree parser",
+  "author": "Rick Olson <technoweenie@gmail.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technoweenie/node-git-merge-parser.git"
+  }
+}

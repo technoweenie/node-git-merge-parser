@@ -1,0 +1,58 @@
+changed in both
+  base   100644 5de8c47df7a5c8823332d735c5dfce1b148b8cfb file
+  our    100644 9a6aba7107958648574f516ef0a94762e637d8a4 file
+  their  100644 fed5afb17fdf682bc7e522f07da26e0cfced99b7 file
+@@ -1,4 +1,8 @@
++<<<<<<< .our
+ branch: change
++=======
++updated
++>>>>>>> .their
+
+ one one one one one
+ one one one one one
+@@ -6,7 +10,11 @@
+ one one one one one
+ one one one one one
+
++<<<<<<< .our
+ branch: change
++=======
++updated
++>>>>>>> .their
+
+ two two two two two
+ two two two two two
+@@ -14,7 +22,11 @@
+ two two two two two
+ two two two two two
+
++<<<<<<< .our
+ branch: change
++=======
++updated
++>>>>>>> .their
+
+ three three three three three
+ three three three three three
+@@ -22,7 +34,11 @@
+ three three three three three
+ three three three three three
+
++<<<<<<< .our
+ branch: change
++=======
++updated
++>>>>>>> .their
+
+ four four four four four
+ four four four four four
+@@ -30,4 +46,8 @@
+ four four four four four
+ four four four four four
+
++<<<<<<< .our
+ branch: change
++=======
++updated
++>>>>>>> .their
