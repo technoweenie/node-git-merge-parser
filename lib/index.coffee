@@ -1,14 +1,33 @@
+fs = require "fs"
+
 module.exports =
   parse: (diff) ->
     if diff.toString
       diff = diff.toString()
     lines = diff.split "\n"
-    parser = header
-    context = {files: {}}
+    parser = new Parser
     for line in lines
-      parser = parser context, line
-    finishFile context
-    context
+      parser.parse line
+    parser.finish()
+
+  parseFileSync: (filename) ->
+    @parse fs.readFileSync(filename)
+
+  parser: ->
+    new Parser
+
+class Parser
+  constructor: ->
+    @parser = header
+    @context =
+      files: {}
+
+  parse: (line) ->
+    @parser = @parser(@context, line)
+
+  finish: ->
+    finishFile @context
+    @context
 
 finishFile = (context) ->
   if context.currentFile?
